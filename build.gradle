@@ -15,6 +15,17 @@ buildscript {
     }
 }
 
+plugins {
+  id "org.sonarqube" version "6.0.1.5171"
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "kendra-mvl_stubby4j_382cb54d-7c41-4aba-a283-e16fcef6b6e1"
+    property "sonar.projectName", "stubby4j"
+  }
+}
+
 apply plugin: "java-library"
 apply plugin: "maven-publish"
 apply plugin: "signing"
